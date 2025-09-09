@@ -45,19 +45,41 @@ header {
   z-index: 10;
 }
 
+/* Navbar styling */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: auto;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
 }
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #005fa3;
+  border-bottom: 2px solid #005fa3;
+}
+
 
 /* === Hero Section === */
 #hero {
@@ -168,3 +190,4 @@ nav ul li a.active {
   font-weight: bold;      /* make it stand out */
   border-bottom: 2px solid #005fa3; /* underline effect */
 }
+
