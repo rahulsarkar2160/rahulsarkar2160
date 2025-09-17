@@ -21,9 +21,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 section {
   padding: 60px 20px;
@@ -59,7 +59,7 @@ nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 0.5rem 0;
+  padding: 0.5 rem 0;
   margin: 0;
 }
 
@@ -69,15 +69,17 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #55330379;
+  font-size: 1.5rem;
   font-weight: 500;
-  transition: color 0.3s, border-bottom 0.3s;
+  transition: 200ms;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #005fa3;
-  border-bottom: 2px solid #005fa3;
+  color: #0547febc ;
+  font-size: 180%;
+  transition: 200ms;
 }
 
 
@@ -121,6 +123,7 @@ nav ul li a.active {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 1rem;
 }
 
 /* === Projects === */
